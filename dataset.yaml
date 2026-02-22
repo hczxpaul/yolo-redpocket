@@ -1,0 +1,12 @@
+path: ./dataset
+train: images/train
+val: images/val
+
+names:
+  0: red_packet
+  1: open_button
+  2: amount_text
+  3: close_button
+  4: back_button
+  5: opened_red_packet
+  6: play_button

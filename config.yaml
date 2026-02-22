@@ -1,0 +1,48 @@
+project:
+  name: 微信红包自动抢夺器 - YOLO版
+  version: 2.0.0
+  author: RedPocket Team
+
+model:
+  default_path: models/best.pt
+  default_size: s
+  classes:
+    - red_packet
+    - open_button
+    - amount_text
+    - close_button
+    - back_button
+    - opened_red_packet
+
+class_colors:
+  red_packet: [0, 255, 0]
+  open_button: [255, 0, 0]
+  amount_text: [0, 0, 255]
+  close_button: [255, 255, 0]
+  back_button: [255, 128, 0]
+  opened_red_packet: [128, 128, 128]
+
+detection:
+  default_confidence: 0.5
+  iou_threshold: 0.7
+
+training:
+  default_epochs: 100
+  default_batch: 16
+  default_imgsz: 640
+  default_patience: 30
+  workers: 8
+  amp: true
+
+ui:
+  window_width: 1600
+  window_height: 1000
+  min_window_width: 1400
+  min_window_height: 900
+  background_color: "#f0f0f0"
+
+paths:
+  dataset: dataset
+  models: models
+  runs: runs
+  logs: logs
