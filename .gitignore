@@ -19,6 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+train_with_best_practice.py
 
 # Virtual Environment
 venv/
@@ -37,6 +38,8 @@ dataset/
 models/
 weights/
 runs/
+logs/
+
 
 # Cache
 *.cache
